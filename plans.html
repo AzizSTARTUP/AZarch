@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <h1>📁 Mes Plans</h1>
+  <div class="plans-list">
+    <div class="plan-card">
+      <img class="plan-img" src="images/Activity.png" alt="Plan aziz abdanour">
+      <div class="plan-title">aziz abdanour</div>
+      <div class="plan-info"><strong>Date :</strong> 2025-06-24</div>
+      <div class="plan-price"><strong>Prix :</strong> 20000 DA</div>
+    </div>
+    <div class="plan-card">
+      <img class="plan-img" src="images/Activity.png" alt="Plan aziz ahmed">
+      <div class="plan-title">aziz ahmed</div>
+      <div class="plan-info"><strong>Date :</strong> 2025-06-24</div>
+      <div class="plan-price"><strong>Prix :</strong> 13500 DA</div>
+    </div>
+    <div class="plan-card">
+      <img class="plan-img" src="images/Activty diagram memoire corrigé.png" alt="Plan aziz hichem">
+      <div class="plan-title">aziz hichem</div>
+      <div class="plan-info"><strong>Date :</strong> 2025-06-24</div>
+      <div class="plan-price"><strong>Prix :</strong> 12000 DA</div>
+    </div>
+  </div>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #42a5f5, #7e57c2, #ef5350);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .plans-list {
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .plan-card {
+      background: #ffffffee;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.13);
+      padding: 2rem 1.2rem 1.7rem 1.2rem;
+      transition: transform 0.18s, box-shadow 0.18s;
+      border: 1.5px solid #e3e3f7;
+    }
+    .plan-card:hover {
+      transform: translateY(-7px) scale(1.03);
+      box-shadow: 0 12px 36px rgba(60,60,90,0.18);
+    }
+    .plan-img {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      box-shadow: 0 3px 12px rgba(80,80,120,0.10);
+    }
+    .plan-title {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: #1976d2;
+      margin-bottom: 10px;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+    .plan-info {
+      font-size: 1.01rem;
+      color: #444;
+      margin-bottom: 7px;
+      text-align: center;
+    }
+    .plan-price {
+      font-size: 1.12rem;
+      color: #7e57c2;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  </style>
+      max-width: 600px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+    }
+
+    .plan-card h3 {
+      margin-top: 0;
+      color: #1976d2;
+      font-size: 1.3rem;
+    }
+
+    .plan-card p {
+      margin: 0.4rem 0;
+      font-size: 1rem;
+    }
+
+    .plan-card img {
+      margin-top: 1rem;
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: linear-gradient(135deg, #1976d2, #512da8);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.8rem 1.3rem;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      transition: opacity 0.25s;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .warning-box {
+      background:#fff3cd;
+      color:#856404;
+      padding:1rem;
+      border-radius:12px;
+      margin: 1rem auto 2rem auto;
+      border:1px solid #ffeeba;
+      text-align:center;
+      max-width: 700px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    a.back {
+      display: block;
+      margin-top: 2rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1rem;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1>📁 Plans Enregistrés</h1>
+
+  <div class="warning-box">
+    ⚠️ Veuillez nous contacter avant de procéder au paiement.<br>
+    ✉️ <a href="mailto:azizhicham136@gmail.com" style="color:#1976d2;font-weight:bold;">azizhicham136@gmail.com</a>
+  </div>
+
+  <!-- Plan 1 -->
+  <div class="plan-card">
+    <h3>aziz hichem</h3>
+    <p><strong>Date :</strong> 2025-06-24</p>
+    <p><strong>Prix :</strong> <span style="color:#512da8;font-weight:bold;">15000 DA</span></p>
+    <img src="../images/Activity.png" alt="Plan aziz hichem">
+    <div style="text-align:center;">
+      <a href="mailto:azizhicham136@gmail.com" class="btn">📩 Demander ce plan</a>
+    </div>
+  </div>
+
+  <!-- Plan 2 -->
+  <div class="plan-card">
+    <h3>aziz abdanour</h3>
+    <p><strong>Date :</strong> 2025-06-24</p>
+    <p><strong>Prix :</strong> <span style="color:#512da8;font-weight:bold;">20000 DA</span></p>
+    <img src="Activity.png" alt="Plan aziz abdanour">
+    <div style="text-align:center;">
+      <a href="mailto:azizhicham136@gmail.com" class="btn">📩 Demander ce plan</a>
+    </div>
+  </div>
+
+  <!-- Plan 3 -->
+  <div class="plan-card">
+    <h3>aziz ahmed</h3>
+    <p><strong>Date :</strong> 2025-06-24</p>
+    <p><strong>Prix :</strong> <span style="color:#512da8;font-weight:bold;">13500 DA</span></p>
+    <img src="startup/images/Activity.png" alt="Plan aziz ahmed">
+    <div style="text-align:center;">
+      <a href="mailto:azizhicham136@gmail.com" class="btn">📩 Demander ce plan</a>
+    </div>
+  </div>
+
+  <a href="index.html" class="back">← Retour</a>
+</body>
+</html>

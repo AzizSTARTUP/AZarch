@@ -1,0 +1,84 @@
+# Rapport de stage
+
+## Remerciements
+
+Je tiens à remercier M. Aziz Abdanour, tuteur de stage et architecte, pour son accueil, sa disponibilité et ses conseils tout au long de cette expérience professionnelle. Merci également à toute l’équipe du bureau d’architecture pour leur soutien et leur confiance.
+
+## Introduction
+
+Ce rapport présente le déroulement et les réalisations de mon stage effectué au sein du bureau d’architecture de M. Aziz Abdanour. L’objectif principal était de concevoir et développer une application web moderne pour la gestion et la valorisation de plans architecturaux, adaptée à un usage public et évolutive vers une version professionnelle.
+
+## Présentation de l’entreprise
+
+Le bureau d’architecture de M. Aziz Abdanour est reconnu pour son expertise dans la conception de projets architecturaux variés (logements, bureaux, équipements publics). Le cabinet accorde une grande importance à l’innovation et à la digitalisation de ses services pour mieux répondre aux attentes de ses clients.
+
+## Objectifs et missions du stage
+
+- Analyser les besoins numériques du bureau d’architecture.
+- Concevoir une application web permettant la présentation, la gestion et la valorisation de plans architecturaux.
+- Offrir une interface moderne, responsive et accessible à tous.
+- Documenter le projet et préparer son évolution vers une version multi-utilisateur.
+
+## Analyse des besoins
+
+Après plusieurs échanges avec le tuteur et l’équipe, les besoins suivants ont été identifiés :
+- Permettre aux clients de consulter des plans en ligne, avec description et prix.
+- Mettre en avant la possibilité de commander un plan personnalisé.
+- Garantir la simplicité d’utilisation et la compatibilité multi-appareils.
+- Sécuriser les données et limiter l’accès public à la simple consultation.
+
+## Conception de l’application
+
+### Architecture technique
+- **Frontend** : HTML5, CSS3, JavaScript (gestion locale via localStorage)
+- **Organisation** :
+  - `index.html` : page d’accueil, contact, appel à commande personnalisée
+  - `plans.html` : affichage des plans, prix, suppression locale
+  - `uploads/` : images des plans
+  - `style.css` : styles globaux
+  - `memoire.txt`, `organisation_fichiers.txt` : documentation
+- **Version évolutive** : possibilité d’ajouter un backend (PHP/MySQL ou Node.js/Express) pour la gestion multi-utilisateur et l’upload partagé.
+
+### Fonctionnalités développées
+- Affichage de plans par défaut (aziz hichem, aziz abdanour, aziz ahmed)
+- Prix dynamique pour chaque plan (affichage du prix total, part architecte, part développeur)
+- Suppression locale des plans (localStorage)
+- Messages d’avertissement et appel à contact par email pour toute commande personnalisée
+- Responsive design (adaptation à tous les écrans)
+
+## Réalisation et développement
+
+Le développement s’est déroulé en plusieurs étapes :
+1. **Maquettage** de l’interface et validation avec le tuteur
+2. **Développement** des pages HTML/CSS et de la logique JavaScript
+3. **Intégration** des images de plans et des prix dynamiques
+4. **Tests** sur différents navigateurs et appareils
+5. **Rédaction** de la documentation technique et fonctionnelle
+
+## Difficultés rencontrées et solutions
+- **Gestion du stockage partagé** : le choix du localStorage limite le partage entre utilisateurs, mais garantit la simplicité et la sécurité pour la version publique.
+- **Compatibilité images** : attention portée aux chemins d’accès et formats pour garantir l’affichage sur tous les hébergements.
+- **Sécurité** : limitation des fonctionnalités d’ajout/édition aux seuls administrateurs pour éviter les abus.
+
+## Apports du stage
+- Découverte du fonctionnement d’un cabinet d’architecture et de ses besoins numériques
+- Mise en pratique des compétences en développement web
+- Sensibilisation à l’importance de l’expérience utilisateur et de la clarté de l’interface
+- Travail en collaboration avec un tuteur expérimenté
+
+## Perspectives d’évolution
+- Passage à une version serveur (Node.js/Express ou PHP/MySQL) pour la gestion multi-utilisateur
+- Ajout d’un espace administrateur sécurisé
+- Intégration d’un module de paiement en ligne
+- Fonctionnalités avancées : recherche, filtres, édition de plans, etc.
+
+## Conclusion
+
+Ce stage m’a permis de mettre en œuvre mes compétences techniques dans un contexte professionnel réel, de répondre à un besoin concret et d’apporter une solution numérique moderne à un bureau d’architecture. Ce projet constitue une base solide pour toute évolution future vers une application professionnelle complète.
+
+---
+
+**Stagiaire :** [Ton nom ici]
+**Tuteur de stage :** M. Aziz Abdanour
+**Période :** [dates du stage]
+**Date de rédaction :** 29/06/2025

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #42a5f5, #7e57c2, #ef5350);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background: #ffffffee;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+      color: #1976d2;
+      font-size: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      outline: none;
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+
+    input:focus {
+      border-color: #1976d2;
+      box-shadow: 0 0 6px rgba(25, 118, 210, 0.5);
+    }
+
+    button {
+      background: linear-gradient(135deg, #1976d2, #512da8);
+      color: #fff;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: opacity 0.25s;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: linear-gradient(135deg, #43a047, #2e7d32);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.8rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      transition: opacity 0.25s;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    hr {
+      margin: 2rem 0;
+      border: none;
+      height: 1px;
+      background: #ddd;
+    }
+
+    .error {
+      color: #d32f2f;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🔑 Connexion</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Mot de passe" required>
+      <button type="submit">Se connecter</button>
+    </form>
+    <p class="error" id="errorMsg">❌ Identifiants incorrects</p>
+    <hr>
+    <a href="plans_public.html" class="btn" style="width:100%;text-align:center;">🌍 Accès public</a>
+  </div>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const errorMsg = document.getElementById('errorMsg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // empêche le rechargement de la page
+
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      if (username === "admin.aziz@gmail.com" && password === "123") {
+        window.location.href = "mes_plans.html"; // redirection admin
+      } else {
+        errorMsg.style.display = "block"; // affiche message erreur
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Accueil - Startup Architecture</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<style>
+		body {
+			background: linear-gradient(135deg, #42a5f5, #7e57c2, #ef5350);
+			background-size: 400% 400%;
+			animation: gradientBG 12s ease infinite;
+			min-height: 100vh;
+		}
+		@keyframes gradientBG {
+			0% { background-position: 0% 50%; }
+			50% { background-position: 100% 50%; }
+			100% { background-position: 0% 50%; }
+		}
+		.main-card {
+			background: #ffffffee;
+			border-radius: 18px;
+			max-width: 520px;
+			margin: 3rem auto 0 auto;
+			box-shadow: 0 8px 32px rgba(30,64,175,0.13);
+			padding: 2.5rem 2rem 2rem 2rem;
+			text-align: center;
+		}
+		.main-card h1 {
+			color: #1976d2;
+			font-size: 2.2rem;
+			margin-bottom: 1.2rem;
+			text-shadow: 2px 2px 6px rgba(0,0,0,0.08);
+		}
+		.main-card .desc {
+			color: #444;
+			font-size: 1.18rem;
+			margin-bottom: 2.2rem;
+		}
+		.main-card .btn {
+			margin: 1.2rem 0.7rem 0 0.7rem;
+			font-size: 1.13rem;
+			padding: 0.9rem 2.2rem;
+			border-radius: 25px;
+		}
+		.contact-section {
+			margin-top: 2.5rem;
+			background: #e3f2fd;
+			padding: 1.5rem 1rem;
+			border-radius: 14px;
+			text-align: center;
+			box-shadow: 0 2px 8px rgba(30, 64, 175, 0.07);
+		}
+		.contact-section h2 {
+			color: #1976d2;
+			margin-bottom: 0.7rem;
+			font-size: 1.3rem;
+		}
+		.contact-section a {
+			color: #1976d2;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+  <div class="main-card">
+    <h1>Bienvenue sur Startup Architecture</h1>
+    <p class="desc">Votre plateforme pour découvrir, acheter et gérer des plans architecturaux professionnels.</p>
+    <a href="mes_plans.html" class="btn">Voir les plans par admin</a>
+    <a href="login.html" class="btn">Connexion</a>
+    <div class="contact-section">
+      <h2>Contact</h2>
+      <p>Pour toute demande ou achat de plan, contactez-nous :</p>
+      <p>Email : <a href="mailto:azizhicham136@gmail.com">azizhicham136@gmail.com</a></p>
+    </div>
+  </div>
+</body>
+</html>

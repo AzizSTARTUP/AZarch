@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>📁 Plans Enregistrés</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #42a5f5, #7e57c2, #ef5350);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .plan-card {
+      background: #ffffffee;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+    }
+
+    .plan-card h3 {
+      margin-top: 0;
+      color: #1976d2;
+      font-size: 1.3rem;
+    }
+
+    .plan-card p {
+      margin: 0.4rem 0;
+      font-size: 1rem;
+    }
+
+    .btn-delete {
+      margin-top: 1rem;
+      background: linear-gradient(135deg, #d32f2f, #f44336);
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: opacity 0.25s;
+    }
+
+    .btn-delete:hover {
+      opacity: 0.85;
+    }
+
+    a.back {
+      display: block;
+      margin-top: 2rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1rem;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    }
+
+    .warning-box {
+      background:#fff3cd;
+      color:#856404;
+      padding:1rem;
+      border-radius:12px;
+      margin: 1rem auto 2rem auto;
+      border:1px solid #ffeeba;
+      text-align:center;
+      max-width: 700px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>📁 Plans Enregistrés</h1>
+
+  <div class="warning-box">
+    ⚠️ Veuillez nous contacter avant de procéder au paiement.<br>
+    ✉️ <a href="mailto:azizhicham136@gmail.com" style="color:#1976d2;font-weight:bold;">azizhicham136@gmail.com</a>
+  </div>
+
+  <div id="plansContainer"></div>
+
+  <a href="login.html" class="back">← Retour</a>
+
+  <script>
+    // Plans fixes (uniquement ceux-ci)
+    const defaultPlans = [
+      { description: 'aziz hichem', date: '2025-06-24', prix: 12000 },
+      { description: 'aziz abdanour', date: '2025-06-24', prix: 15000 },
+      { description: 'aziz ahmed', date: '2025-06-24', prix: 18000 }
+    ];
+
+    function renderPlans() {
+      const container = document.getElementById('plansContainer');
+      container.innerHTML = '';
+      
+      defaultPlans.forEach((plan, index) => {
+  const prix = parseInt(plan.prix);
+  const dev = Math.round(prix * 0.10);
+  const archi = prix - dev;
+        container.innerHTML += `
+          <div class="plan-card">
+            <h3>📝 Plan ${index + 1}</h3>
+            <p><strong>Description :</strong> ${plan.description}</p>
+            <p><strong>Date :</strong> ${plan.date}</p>
+            <p><strong>Prix :</strong> <span style="color:#512da8;font-weight:bold;">${plan.prix} DA</span></p>
+            <p style="color:#388e3c;"><strong>Pour l'architecte :</strong> ${archi} DA (90%)</p>
+            <p style="color:#d32f2f;"><strong>Pour le développeur :</strong> ${dev} DA (10%)</p>
+            <button class="btn-delete" onclick="deletePlan(${index})">Supprimer</button>
+          </div>
+        `;
+      });
+    }
+
+    // Suppression visuelle
+    function deletePlan(index) {
+      defaultPlans.splice(index, 1);
+      renderPlans();
+    }
+
+    renderPlans();
+  </script>
+</body>
+</html>

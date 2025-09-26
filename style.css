@@ -1,0 +1,107 @@
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	background: #f4f7fa;
+	margin: 0;
+	color: #222;
+}
+.container {
+	max-width: 700px;
+	margin: 40px auto;
+	background: #fff;
+	padding: 2.5rem 2rem;
+	border-radius: 16px;
+	box-shadow: 0 4px 24px rgba(30, 64, 175, 0.08);
+}
+h1, h2 {
+	color: #1976d2;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+.btn {
+	display: inline-block;
+	margin: 1rem 0.5rem 0 0.5rem;
+	padding: 0.8rem 2rem;
+	background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(30, 64, 175, 0.08);
+	transition: background 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+	background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+	box-shadow: 0 4px 16px rgba(30, 64, 175, 0.15);
+}
+.desc {
+	text-align: center;
+	color: #444;
+	margin-bottom: 2rem;
+	font-size: 1.15rem;
+}
+.plans-link {
+	color: #1976d2;
+	text-decoration: underline;
+}
+.contact-section {
+	margin-top: 2rem;
+	background: #e3f2fd;
+	padding: 1.5rem;
+	border-radius: 12px;
+	text-align: center;
+	box-shadow: 0 2px 8px rgba(30, 64, 175, 0.05);
+}
+.contact-section a {
+	color: #1976d2;
+	text-decoration: underline;
+}
+.plan-card {
+	border: 1px solid #e0e7ef;
+	border-radius: 12px;
+	padding: 1.2rem;
+	margin-bottom: 1.5rem;
+	box-shadow: 0 2px 8px rgba(30, 64, 175, 0.07);
+	background: #fff;
+	transition: box-shadow 0.2s;
+}
+.plan-card:hover {
+	box-shadow: 0 6px 24px rgba(30, 64, 175, 0.13);
+}
+.plan-card img, .plan-card embed {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-top: 10px;
+	border-radius: 8px;
+}
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 0.7rem;
+	margin: 0.7rem 0;
+	border: 1px solid #bfc9da;
+	border-radius: 6px;
+	font-size: 1rem;
+	background: #f7fafd;
+}
+button {
+	width: 100%;
+	padding: 0.7rem;
+	background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	margin-top: 1rem;
+	box-shadow: 0 2px 8px rgba(30, 64, 175, 0.08);
+	transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover {
+	background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+	box-shadow: 0 4px 16px rgba(30, 64, 175, 0.15);
+}
